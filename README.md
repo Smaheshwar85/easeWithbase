@@ -1,3 +1,3 @@
 # easeWithbase
 
-this is my git class
+we are learning git
