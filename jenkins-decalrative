@@ -6,7 +6,10 @@ pipeline{
                git credentialsId: 'github', url: 'https://github.com/Smaheshwar85/easeWithbase'
             }
         }
-        
-        
+        stage("Maven Build"){
+        steps{
+         sh "mvn clean package"
+        }
+        }
     }
 }
