@@ -10,13 +10,17 @@ pipeline{
         steps{
          sh "mvn clean package"
         }
+   
         }
-         stage("email_notifications"){
+	stage("email_notifications"){
+	steps{
         mail bcc: '', body: '''Hi Team,
 welcome to jenkins email alerts
 
 Thanks,
 Mahesh''', cc: '', from: '', replyTo: '', subject: 'Jenkins job status', to: 'smahesh2305@gmail.com'
+  
+}
 }
     }
 }
