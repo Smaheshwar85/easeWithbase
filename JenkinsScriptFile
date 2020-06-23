@@ -1,1 +1,10 @@
+node{
+   stage('SCM Checkout'){
+     git 'https://github.com/Smaheshwar85/easeWithbase'
+   }
+   stage('compile-Package'){
+   sh 'mvn package'
+   }
+   
+}
 
