@@ -9,5 +9,6 @@ public class SpringBootHelloWorldExampleApplication
 public static void main(String[] args) 
 {
 SpringApplication.run(SpringBootHelloWorldExampleApplication.class, args);
+  
 }
 }
